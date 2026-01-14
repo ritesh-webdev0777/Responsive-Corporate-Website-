@@ -16,6 +16,9 @@ A clean, responsive, and professional corporate website built using HTML, CSS, a
 
 ⚡ Easily customizable and scalable for future enhancements
 
+<img width="1366" height="604" alt="image" src="https://github.com/user-attachments/assets/3a3f50fd-1be5-42b9-b814-6b498ef7147e" />
+
+
 🛠️ Technologies Used
 
 HTML5
