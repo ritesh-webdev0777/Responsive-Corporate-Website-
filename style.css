@@ -1,0 +1,895 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    min-height: 200vh;
+    /* just for testing scroll */
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 2px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* always above content */
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 45px;
+    /* adjust as needed */
+    width: auto;
+}
+
+/* Nav links */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2b7a2b;
+}
+
+/* Buttons */
+.btn {
+    border: 1px solid #333;
+    background: transparent;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.btn-green {
+    background: #2b7a2b;
+    color: #fff;
+    border: none;
+}
+
+.btn-green:hover {
+    background: #1e591e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+
+/* Step 2 */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background: #2b7a2b;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 450px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* White Button */
+.btn-white {
+    /* background: #fff; */
+    color: #2b7a2b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-white:hover {
+    background: #f0f0f0;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #2b7a2b;
+}
+
+/* Images */
+.hero-images {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    margin-top: 30px;
+}
+
+.hero-images .leaf {
+    position: absolute;
+    top: -53px;
+    right: 261px;
+    width: 200px;
+}
+
+.hero-images .man {
+    width: 280px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-images .field {
+    width: 212px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 50px;
+    z-index: 3;
+    top: 308px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-images {
+        margin-top: 40px;
+    }
+}
+
+/* Step 3 */
+
+/* Trust Section */
+.trust {
+    background: #fff;
+    padding: 60px 10%;
+    position: relative;
+}
+
+.trust-container {
+    text-align: center;
+    margin-top: 55px;
+    margin-left: -97px;
+
+}
+
+.trust-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.trust-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trust-stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.stat-box {
+    text-align: center;
+    max-width: 200px;
+    /* width: 357px;
+    height: 233px; */
+}
+
+.stat-box img {
+    width: 300px;
+    height: 201px;
+    margin-bottom: 15px;
+}
+
+.stat-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Step 4 */
+
+
+
+/* General Section Styling */
+.what-we-do {
+    background: #f6faef;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.what-we-do .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.what-we-do .intro {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Card Layout */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Color Variants */
+.dark-green {
+    background: #003d1d;
+}
+
+.green {
+    background: #28a745;
+}
+
+.light-green {
+    background: #9cd57d;
+    color: #000;
+}
+
+.light-green a {
+    color: #000;
+}
+
+/* Button */
+.btn-container {
+    margin-top: 40px;
+}
+
+.explore-btn {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Step 5 */
+
+.yadu-section {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.yadu-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.yadu-image-wrapper {
+    flex: 1 1 60%;
+    min-width: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.yadu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.yadu-content {
+    margin-top: 68px;
+    height: 291px;
+    width: 614px;
+
+    flex: 1 1 40%;
+    background-color: #26aa41;
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px 0px 20px 20px;
+}
+
+.yadu-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.yadu-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.yadu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 3;
+    position: relative;
+}
+
+.yadu-button:hover {
+    background-color: #ffffff;
+    color: #26aa41;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .yadu-container {
+        flex-direction: column;
+    }
+
+    .yadu-content {
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+    }
+
+    .yadu-image-wrapper {
+        order: -1;
+    }
+}
+
+/* Step 6 */
+
+.how-we-work {
+  padding: 60px 10%;
+  background-color: #f7fbf5;
+  font-family: Arial, sans-serif;
+}
+
+.how-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.how-left {
+  flex: 1;
+}
+
+.how-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.how-left p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.how-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.how-tabs li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.how-tabs li.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+.how-right {
+  flex: 1.2;
+  position: relative;
+}
+
+.how-right img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(80, 60, 50, 0.8);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.overlay p {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.overlay .arrow {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Step 7 */
+
+ 
+.ceo-message {
+  padding: 60px 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.ceo-message .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.ceo-card {
+  display: flex;
+  align-items: center;
+  background: #28a745;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.ceo-image {
+  flex: 1 1 300px;
+}
+
+.ceo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 0 0 12px;
+}
+
+.ceo-content {
+  flex: 1 1 400px;
+  padding: 30px;
+  color: #fff;
+}
+
+.ceo-content h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.ceo-content .designation {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.ceo-content .description {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.ceo-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.ceo-content .btn:hover {
+  background: #fff;
+  color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ceo-card {
+    flex-direction: column;
+  }
+
+  .ceo-image img {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .ceo-content {
+    text-align: center;
+  }
+}
+
+/* Step 8 */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7faf2;
+}
+
+.partners-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 60px 10%;
+}
+
+.partners-left {
+  flex: 1;
+}
+
+.partners-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.partners-left p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.partners-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.partner-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover .arrow {
+  transform: translateX(5px);
+  color: #0b8f47;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .partners-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .partners-right {
+    gap: 15px;
+  }
+}
+
+/* Step 9 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-news {
+  padding: 60px 10%;
+  background: #fff;
+}
+
+.news-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-header p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.news-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-content h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.news-content a {
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+/* Step 10 */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Section */
+.geographic-section {
+  background: url("/world\ map.png") no-repeat center center/cover ; 
+  background-color: #2b7a2b; /* green overlay */
+  color: white;
+  padding: 100px 50px;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
+}
+
+/* Content */
+.geographic-content {
+  max-width: 600px;
+}
+
+.geographic-content h2 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.geographic-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: #2ca44f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .geographic-section {
+    padding: 80px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .geographic-content h2 {
+    font-size: 32px;
+  }
+
+  .geographic-content p {
+    font-size: 16px;
+  }
+}
